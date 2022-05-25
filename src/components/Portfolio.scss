@@ -1,0 +1,96 @@
+@import '../Global.scss';
+
+
+.portfolio{
+    background-color: #ffe8d6;
+    display: flex;
+    .left{
+        height: 100%;
+        width: 100%;
+        flex:1;
+        background-color: $bgColor;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        
+        
+    }
+    .right{
+        height: 100%;
+        flex:0;
+        background-color: $bgColor;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+}
+.project-card-container{
+    // min-height: 50vh !important;
+    padding:20px;
+    justify-content: center;
+    // align-items: center;
+    .project-card{
+        // max-width: 400px;
+        background-color: $mainColor;
+        border-radius: 10px;
+
+        .image-container{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+    }
+}
+.carousel-control-prev{
+    margin-left: 5px !important;
+    // color: black !important;
+    // background-color: black !important;
+}
+.carousel-control-next, .carousel-control-prev{
+    width: 5% !important;
+    background-color: #BCB8B1 !important;
+    height: 10% !important;
+    margin-top: 30% !important;
+    border-radius: 10px;
+    opacity: 1 !important;
+}
+.ant-tabs{
+    .ant-tabs-nav{
+        padding: 30px;
+    }
+}
+.ant-tabs-tab{
+    font-size:28px !important;
+    font-family:'Roboto' !important;
+}
+.ant-tabs-ink-bar{
+    background-color: #BCB8B1 !important;
+}
+.ant-tabs-tab.ant-tabs-tab-active .ant-tabs-tab-btn{
+    color:black !important;
+}
+.ant-tabs-ink-bar{
+    height: 4px !important;
+}
+.ant-tabs-tab-btn:hover{
+    color:black !important;
+}
+.ant-tabs-tab:hover{
+    color:black !important;
+}
+.left-tabs{
+    height: 100%;
+}
+.ant-tabs-nav{
+    justify-self: flex-start !important;
+}
+@media screen and (max-width: 600px) {
+   
+    .ant-tabs-tab{
+        font-size:18px !important;
+        font-family:'Roboto' !important;
+    }
+  }

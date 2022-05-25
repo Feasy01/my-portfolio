@@ -1,0 +1,76 @@
+@import '../Global.scss';
+
+.contact{
+
+    background-color: $bgColor;
+    display: flex;
+    .left{
+        flex:0.5;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        img{
+            width:90%;
+        }
+    }
+    .right{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        flex:0.5;
+
+        h2{
+            font-size:30px;
+        }
+        form{
+            width: 70%;
+            height: 70%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: center;
+            input{
+                width: 300px;
+                height: 30px;
+                font-size:14px;
+            }
+            textarea{
+                width: 300px;
+                height: 200px;
+                font-size:14px;
+            }
+            
+                button{
+                    width: 1500px;
+                    height: 30px;
+                    color:white;
+                    background-color: crimson;
+                    border: none;
+                    border-radius: 30px;
+                    font-weight: 500;
+                    cursor: pointer;
+
+                    &:focus{
+                        outline: none;
+                    }
+                    }
+
+        }
+    }
+    .social-icon{
+        font-size: 28px;
+        padding: 0 10px;
+    }
+
+}
+
+@media screen and (max-width: 600px) {
+   
+   .contact .left{
+       display: none !important;
+   }
+   .contact .right{
+       flex:1 !important;
+   }
+  }
